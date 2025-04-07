@@ -1,2 +1,106 @@
-/* CSS Document */
+@charset "utf-8";
 
+body {
+	background-color:#567B81;
+	margin: 20px 40px 20px 40px;
+}
+
+nav{
+	background-color:#B2D9E0;
+	overflow: hidden;
+	font-weight: 900;
+	font-style: normal;
+	
+}
+
+nav a {
+	float: left;
+	color:aliceblue;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+	font-size: 25px;
+
+}
+
+nav a:hover {
+	background-color:aliceblue;
+	color: #567B81;
+	
+}
+
+p{
+	color: aliceblue;
+}
+code {
+background-color: black;
+color: greenyellow;
+padding: 15px;
+line-height: 42px;
+}
+
+
+.section-title{
+	border-bottom:dotted;
+	display: 8px;
+}
+
+.headline-copy {
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: #FBDBBF;
+	width: 450px;
+}
+
+.flex-container {
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap:wrap; 
+}
+
+.inner{
+	width:450px;
+}
+
+.body-copy{
+  width: 450px;
+}
+
+.feature{
+	width: auto;
+	height: 400px;
+}
+
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: #567B81;
+  border-radius: 50%;
+  border:solid aliceblue;
+  display:inline-block;
+}
+
+.dot-two {
+  height: 200px;
+  width: 200px;
+  background-color: #B2D9E0;
+  border-radius: 50%;
+  display:inline-block;
+}
+
+.dot-three {
+  height: 200px;
+  width: 200px;
+  background-color: #FBDBBF;
+  border-radius: 50%;
+  display:inline-block;
+}
+
+.dot-four {
+  height: 200px;
+  width: 200px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  display:inline-block;
+}
