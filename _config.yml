@@ -8,6 +8,6 @@ linkedin: https://www.linkedin.com/in/dejavas/
 #behance:
 
 collections:
-  design:
-    output: true
-    permalink: /:collection/:path/
+design:
+output: true
+permalink: /:collection/:path/
