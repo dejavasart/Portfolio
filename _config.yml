@@ -5,3 +5,8 @@ baseurl: "/Portfolio"
 
 instagram: https://www.instagram.com/dvas.art
 linkedin: https://www.linkedin.com/in/dejavas/
+behance:
+
+collections:
+design:
+output: true
