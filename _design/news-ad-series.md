@@ -12,7 +12,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi enim, volutpat
 
 ## Tools & Techniques
 - Adobe InDesign
-- Adobe Photoshop for Texture and Blending
+- Adobe Photoshop
+- Adobe Illustrator
 
 ## Outcomes
 
