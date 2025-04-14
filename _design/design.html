@@ -1,107 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-	<meta name= "viewport" content="width=device-width, initial-scale=1.0"/>
-<title>{{ page.title }}</title>
-	
-	
-	<style>
-	
-		body{
-			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-			padding: 2rem;
-			background-color: antiquewhite;+
-			
-			color:black;
-		}
-		
-		h1{
-			text-align: center;
-			margin-bottom:2rem;
-		}
-		
-		.design-grid{
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-			gap: 1.5rem;
-			max-width: 1200px;
-			margin: 0 auto;
-		}
-		
-		.design-card{
-			background: aliceblue;
-			border: 1px solid black;
-			padding: 1.5rem;
-			border-radius: 12px;
-			box-shadow: 0 4px 6px rgba(0,0,0,0.5);
-			transition: transform 0.2s ease;
-		}
-		
-		.design-card:hover {
-			transform: translateY (-4px);
-		}
-		
-		.design-card h2 {
-			font-size:1.2rem;
-			margin-top:0;
-		}
-		
-		.design-card p {
-			margin:0.5rem 0;
-		}
-	
-		.design-card a {
-			display: inline-block;
-			margin-top: 1rem;
-			color:cadetblue;
-			text-decoration: none;
-			font-weight: bold;
-		}
-		
-		.design-card a:hover{
-			text-decoration: underline;
-		}
-		
-	</style>
-	
-	
-	
-	
-</head>
+---
+layout: design
+title: "design projects"
+---
 
-	
-	
-	
-<body>
-	
-	<h1> Featured Design Projects </h1>
-		
-	<div class="design-grid">
-	
-		{% for design in site.design %}
-		
-		<div class="design-card">
-		
-			<h2>{{ design.title }}</h2>
-			
-				{% if design.tools %}
-			
-				<p>
-					<strong>Tools:</strong> {{ design.tools | join: ", " }}
-				</p>
-			
-				{% endif %}
-			
-				<p>{{ design.description }}</p>
-			
-					<a href="{{ design.url }}">View Project</a>    
-		
-		</div>
-	
-	{% endfor %}
-		
-		
-	
-</body>
-</html>
+<div class="design-grid">
+	{% for design in site.design %}
+	<div class= "design-card">
+		{% if design.tools %}
+			<p> <strong>Tools:</strong> {{ design.tools | join: ", "}}</p>
+		{% endif %}
+		{% if design.description %}
+			<p>{{ design.description }}</p>
+		{% endif %}
+	 <a href="{{ site.baseurl }}/{{ design.url }}">View Project</a>
+	</div>
+  {% endfor %}
+</div>
